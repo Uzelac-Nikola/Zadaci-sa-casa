@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <script>
+        for (var i = 0; i <= 10; i += 2) {
+            console.log('parni:', i);
+            for (var j = 0; j < 10; j++) {
+                if (j % 2 != 0) {
+                    console.log('neparni:', j);
+                    for (var k = 0; k < 10; k++) {
+                        if (k % 3 == 0) {
+                            console.log('deljivi sa 3:', k);
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

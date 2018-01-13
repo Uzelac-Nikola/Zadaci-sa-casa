@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function randomBroj(prviBroj, drugiBroj, treciBroj, cetvrtiBroj) {
+            var odranBroj = Math.floor(Math.random() * (drugiBroj - prviBroj + 1) + prviBroj);
+            console.log("2) Broj je: " + odranBroj);
+
+            if (odranBroj % 2 !== 0) {
+
+            } else {
+                return odranBroj;
+                //randomBroj(99, 1000);
+            }
+            console.log("1) Broj je: " + odranBroj);
+
+
+
+        }
+        randomBroj(99, 1000);
+    </script>
+</body>
+
+</html>

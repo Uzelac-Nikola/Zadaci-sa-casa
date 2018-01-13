@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <button onclick="document.getElementById('paragraf').innerHTML = provera(randomNumber())">Dugme</button>
+
+    <p id="paragraf"></p>
+
+    <script>
+        function randomNumber() {
+            var a = Math.floor(Math.random() * 100);
+            return a;
+        }
+
+        function provera(a) {
+
+            if (a >= 90) {
+                console.log("Broj je veci");
+                return a;
+
+            } else if (a <= 20) {
+                console.log("Broj je manji");
+                return a;
+            } else(a >= 21 && a <= 89); {
+                console.log("Broj je srednji");
+                return a;
+            }
+        }
+    </script>
+</body>
+
+</html>

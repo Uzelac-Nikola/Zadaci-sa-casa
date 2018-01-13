@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <script>
+        var broj = 0;
+        while (broj <= 1000) {
+            var string = broj.toString();
+            if (broj % 2 != 0 && string.charAt(0) === string.charAt(1)) {
+                console.log(broj);
+            }
+            broj++;
+        }
+    </script>
+</body>
+
+</html>
